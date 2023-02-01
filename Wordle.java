@@ -25,7 +25,7 @@ public class Wordle
 
         // Loop for 6 guesses
         for(int round=0; round<6; round++) {
-            System.out.print("Please guess ---> ");
+            System.out.print("Insert guess ---> ");
             guess = sc.nextLine().toUpperCase();
 
             // Making a loop to compare through each letter
@@ -51,14 +51,14 @@ public class Wordle
 
             //if guess is correct, game will end
             if (guess == (correct)){
-                System.out.println("Correct! You win! WWW");
+                System.out.println("Correct! You win!");
                 break;
             }
         }
         // Print correct answer if player loses
         if(!guess.equals(correct))
         {
-            System.out.println("Wrong! The correct word is " + correct + "." + " LLL ");
+            System.out.println("Wrong! The correct word is " + correct + ".");
         }
     }
 }
