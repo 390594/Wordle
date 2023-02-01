@@ -50,7 +50,7 @@ public class Wordle
             System.out.println("");
 
             //if guess is correct, game will end
-            if (guess == (correct)){
+            if(guess.equals(correct)){
                 System.out.println("Correct! You win!");
                 break;
             }
@@ -62,4 +62,3 @@ public class Wordle
         }
     }
 }
-
