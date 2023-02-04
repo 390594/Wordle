@@ -22,7 +22,7 @@ public class Wordle
         final String NO = "No-";
 
         System.out.println("WORDLE!");
-        String correct = "SHAKE";
+        String correct = "PLANT";
 
         Scanner sc = new Scanner(System.in);
         String guess = "";
@@ -36,10 +36,10 @@ public class Wordle
             //it's 5 because there's 5 letters in wordle
             for (int i=0;i<5;i++) 
             {
-                if (guess.substring(i,i+1) == (correct.substring(i,i+1))) {
+                if (guess.substring(i,i+1).equals((correct.substring(i,i+1)))) {
 
                     // if the letters match, it will say "yes"
-                    System.out.print(YES + guess.substring(0,1) + ", ");
+                    System.out.print(YES + guess.substring(i,i+1) + ", ");
                     // index identifies where a leter is in a different string
                 } else if (correct.indexOf(guess.substring (i,i+1)) > -1) {
                     // if letter is in word but in different spot,make it "maybe"
